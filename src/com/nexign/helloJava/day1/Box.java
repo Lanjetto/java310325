@@ -17,9 +17,12 @@ public class Box {
         if (number > boxes.length || number < 0) {
             throw new ArrayIndexOutOfBoundsException("Индекс не может быть такой");
         }
-        Box[] boxes1 = Arrays.copyOf(boxes, boxes.length - 1);
-        //TODO алгоритм перекладывания удаляемого элемента в конец
-        return null;
+        Box temp = boxes[number];
+        boxes[number] = boxes[boxes.length - 1];
+        boxes[boxes.length - 1] = temp;
+
+        // Копируем массив без последнего элемента
+        return Arrays.copyOf(boxes, boxes.length - 1);
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.nexign.helloJava.day2;
 import com.nexign.helloJava.day1.Box;
 import com.nexign.helloJava.day1.Employee;
 
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
@@ -46,7 +47,6 @@ public class Main2 {
 
         BigInteger divide = three.divide(two);
         BigDecimal divide1 = new BigDecimal(divide);
-
 
         int[] array = new int[]{1,2,4};
         int sum = 0;
